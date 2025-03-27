@@ -34,9 +34,7 @@ To view the portfolio website, open the `index.html` file in a web browser.
 - CSS
 - JavaScript
 
-## Author
 
-Kishore M
 
 ## License
 
