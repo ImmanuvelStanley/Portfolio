@@ -3,55 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kishore M - Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Portfolio - IMMANUVEL STANLEY A</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(120deg, #f4f4f4, #d9e4f5);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .hero {
+            background: linear-gradient(120deg, #333, #555);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .section {
+            padding: 40px;
+            background: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transform: translateY(20px);
+            opacity: 0;
+            animation: fadeUp 1s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 15px;
+            list-style: none;
+            border-radius: 10px;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .navbar ul li a:hover {
+            color: #00bcd4;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Kishore M</h1>
-        <p>B.E. Computer Science Engineering (III Year)</p>
-        <p>Saveetha Engineering College</p>
+    <header class="hero">
+        <div class="container">
+            <img src="/portfolio-website/images/119476328.jpeg" alt="IMMANUVEL STANLEY A" class="profile-img">
+            <div class="info">
+                <h1>IMMANUVEL STANLEY A</h1>
+                <p>B.E. Computer Science Engineering (III Year)</p>
+                <p>Saveetha Engineering College</p>
+            </div>
+        </div>
     </header>
     
-    <nav>
+    <nav class="navbar">
         <ul>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <img src="images/portfolio/project1.png" alt="Project 1">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
+    
+    <section id="projects" class="section">
+        <h2>Projects & Experience</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="/portfolio-website/images/portfolio/images (1).jpeg" alt="Project 1">
+                <p>Project 1</p>
+            </div>
+            <div class="project">
+                <img src="/portfolio-website/images/portfolio/images (2).jpeg" alt="Project 2">
+                <p>Project 2</p>
+            </div>
+            <div class="project">
+                <img src="/portfolio-website/images/portfolio/images (3).jpeg" alt="Project 3">
+                <p>Project 3</p>
+            </div>
         </div>
-        <div class="project">
-            <img src="images/portfolio/project2.png" alt="Project 2">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
-        </div>
-        <!-- Add more projects as needed -->
     </section>
-
-    <section id="about">
+    
+    <section id="about" class="section">
         <h2>About Me</h2>
-        <p>Brief introduction about myself and my interests.</p>
-        <a href="assets/resume.pdf" download>Download My Resume</a>
+        <p>
+            I am Immanuvel Stanley, a Computer Science Engineering student interested in web application development.
+        </p>
+        <div class="about-container">
+            <div class="details">
+                <h3>Personal Details</h3>
+                <ul>
+                    <li><strong>Name:</strong> IMMANUVEL STANLEY A</li>
+                    <li><strong>DOB:</strong> 04-04-2005</li>
+                    <li><strong>Location:</strong> Ambattur, Chennai</li>
+                    <li><strong>Status:</strong> Studying B.E. CSE</li>
+                    <li><strong>Ph:</strong> 9876543210</li>
+                </ul>
+            </div>
+            <div class="details">
+                <h3>Education & Skills</h3>
+                <ul>
+                    <li>B.E. Computer Science Engineering</li>
+                    <li>Well versed in C and Python</li>
+                    <li>Intermediate in HTML and CSS</li>
+                    <li>Basic knowledge of Databases</li>
+                    <li>UI/UX Design</li>
+                </ul>
+            </div>
+        </div>
     </section>
-
-    <section id="contact">
+    
+    <section id="contact" class="section">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>Email: immanuvel@example.com</p>
         <p>Phone: 9876543210</p>
     </section>
-
-    <footer>
-        <p>&#169; 2024 Kishore M</p>
+    
+    <footer class="footer">
+        <p>&#169; 2024 IMMANUVEL STANLEY A. All Rights Reserved.</p>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html>
